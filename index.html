@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 
   <meta charset="utf-8">
@@ -38,14 +38,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #B1B1A8;
-  width: 400px;
   margin: auto;
+  margin-top: 20px;
   font-size: 12px;
   }
 
-  .card1{
-    margin-top: 25px;
-    width: 340px;
+  .card{
+    margin-top: 20px;
+    width: 325px;
     font-family: "Poppins", sans-serif;
   }
 
@@ -54,21 +54,30 @@
     width: 100px;
     margin: 20px;
     margin-left: 225px;
+    display: block;
   }
 
-  .col1{
-    margin-top: 150px;
+  .col{
+    margin: auto;
   }
 
-  .col2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
+    @media (max-width: 575.98px) { 
+        } 
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+        } 
 
-  .col3{
-    margin-top: 150px;
-  }
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+         }
+
+        /* Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+        }
+
+        /* Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) { 
+         }
 
   </style>
 
@@ -76,55 +85,63 @@
 
 <body style="margin-bottom: 100px; padding: 100px;">
   
-  <h2 class="text-center1"> Reliable, efficient delivery </h2>
-  <h2 class="text-center2">Powered by Technology</h2>
+  <h2 class="text-center1 text-xl"> Reliable, efficient delivery </h2>
+  <h2 class="text-center2 text-xl">Powered by Technology</h2>
 
   <div>
-    <p class="text-center3"> Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful </p>
+    <p class="text-center3 text-xl"> Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful </p>
   </div>
 
-<div class="container">
+<div class="container d-flex justify-content-center">
 <div class="row">
 
-<div class="col col1 align-self-start">
-  <div class="card1 shadow p-0 mb-3 bg-white rounded">
+<div class="col col-sm align-self-start">
+  <div class="card shadow p-0 mb-3 bg-white rounded">
       <div class="card-header" style="background-color: #4FCAFF; padding: 2px"></div>
         <h6 style="font-size: 15px; margin: 20px">Supervisor</h6>
         <p style="font-size: 12px; width: 225px; margin: 20px;">Monitors activity to identify project roadblocks </p>
-        <img class="card-img" src="images/icon-supervisor.svg">
+        <div>
+          <img class="card-img" src="images/icon-supervisor.svg" alt="a magnifying glass">
+        </div>
   </div>
 </div>
 
-<div class="col col2 align-self-center">
-  <div class="card1 shadow p-0 mb-3 bg-white rounded">
-    <div class="card-body" style="padding: 0; margin: auto;">
+<div class="col col-sm align-self-center">
+  <div class="card shadow p-0 mb-3 bg-white rounded">
+    <div class="card-body" style="padding: 0;">
       <div class="card-header" style="background-color: #C70039; padding: 2px"></div>
       <div>
         <h6 style="font-size: 15px; margin: 20px">Team Builder</h6>
         <p style="font-size: 12px; width: 225px; margin: 20px;">Scans our talent network to create the optimal team for your project</p>
-        <img class="card-img" src="images/icon-team-builder.svg">
+        <div>
+          <img class="card-img" src="images/icon-team-builder.svg" alt="a homepage">
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="card1 shadow p-0 mb-3 bg-white rounded">
-    <div class="card-body" style="padding: 0; margin: auto;">
+  <div class="card shadow p-0 mb-3 bg-white rounded" style="margin-top: 40px;">
+    <div class="card-body" style="padding: 0;">
       <div class="card-header" style="background-color: #FFBC0B; padding: 2px"></div>
       <div>
         <h6 style="font-size: 15px; margin: 20px">Karma</h6>
         <p style="font-size: 12px; width: 225px; margin: 20px;">Regularly evaluates our talent to ensure quality</p>
-        <img class="card-img" src="images/icon-karma.svg">
+        <div>
+          <img class="card-img d-block" src="images/icon-karma.svg" alt="a lamp">
+        </div>
+      </div>
       </div>
     </div>
-  </div>
 </div>
 
-<div class="col align-self-start col3">
-  <div class="card1 shadow p-0 mb-3 bg-white rounded">
+<div class="col align-self-start">
+  <div class="card shadow p-0 mb-3 bg-white rounded">
       <div class="card-header" style="background-color: #015DEB; padding: 2px"></div>
         <h6 style="font-size: 15px; margin: 20px">Calculator</h6>
         <p style="font-size: 12px; width: 225px; margin: 20px;">Uses data from past projects to provide better delivery estimates</p>
-        <img class="card-img" src="images/icon-calculator.svg">
+        <div>
+          <img class="card-img" src="images/icon-calculator.svg" alt="a computer screen">
+        </div>
       </div>
   </div>
 </div>
@@ -132,7 +149,7 @@
   
 
   <footer>
-    <p class="attribution">
+    <p class="attribution text-sm-center" style="margin-top: 100px;">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Yuri da Silva Mendes</a>.
     </p>
